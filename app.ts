@@ -1,10 +1,12 @@
 
 
 
-let revenue = 1000;
-let bonus: number = 500;
-let c: string = 'someString';
-let a: boolean = false;
+function getFullName(firstName, surName){
+    return `${firstName} ${surName}`;
+}
 
-let res: number = revenue + bonus;
-console.log(res);
+const getFullNameArrow = (firstName: string, surName: string): string =>{
+    return `${firstName} ${surName}`;
+}
+
+console.log(getFullName(true, false));
