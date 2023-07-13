@@ -65,6 +65,8 @@ console.log(res);
 
 // Tuples
 
+/*
+
 const skill: [number, string] = [1, 'Drawing'];
 //const id = skill[0];
 //const skillName = skill[1];
@@ -74,3 +76,14 @@ console.log(`${id} ${skillName}`);
 
 
 const arr: [number, string, ...boolean[]] = [1, "Something", true, true, false];
+
+*/
+
+// Readonly 
+
+const skill: readonly[number, string] = [1, 'Drawing'];
+
+//skill[0] = 10; // error
+
+const skills: readonly string[] = ['Cooking', 'Drawing', 'Modeling'];
+//skills[0] = ('newSkill'); // error
