@@ -16,7 +16,7 @@ const user = {
 console.log(getFullName(user));
 
 */
-// Objecy typesation
+// Object typesation
 /*
 
 let info: {
@@ -42,10 +42,23 @@ let info: {
 }
 
 */
-const skills = ['Cooking', 'Drawing', 'Modeling'];
-for (const skill of skills) {
+// Array typesation
+/*
+
+const skills: string[] = ['Cooking', 'Drawing', 'Modeling'];
+
+for (const skill of skills){
     console.log(skill.toUpperCase());
 }
+
 const res = skills
     .filter(s => s !== 'Cooking');
 console.log(res);
+
+*/
+// Tuples
+const skill = [1, 'Drawing'];
+//const id = skill[0];
+//const skillName = skill[1];
+const [id, skillName] = skill;
+console.log(`${id} ${skillName}`);
