@@ -1,0 +1,12 @@
+
+{
+    "officeID": 45,
+    "isOpenned": false,
+    "contacts": {
+        "phone": "+0000000000",
+        "email": "myMail@email.com",
+        "address": {
+            "city": "cityName"
+        }
+    }
+}
