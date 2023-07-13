@@ -19,7 +19,9 @@ console.log(getFullName(user));
 
 */
 
-// Objecy typesation
+// Object typesation
+
+/*
 
 let info: {
     officeID: number,
@@ -42,3 +44,17 @@ let info: {
         }
     }
 }
+
+*/
+
+// Array typesation
+
+const skills: string[] = ['Cooking', 'Drawing', 'Modeling'];
+
+for (const skill of skills){
+    console.log(skill.toUpperCase());
+}
+
+const res = skills
+    .filter(s => s !== 'Cooking');
+console.log(res);
