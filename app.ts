@@ -81,9 +81,27 @@ const arr: [number, string, ...boolean[]] = [1, "Something", true, true, false];
 
 // Readonly 
 
-const skill: readonly[number, string] = [1, 'Drawing'];
+//const skill: readonly[number, string] = [1, 'Drawing'];
 
 //skill[0] = 10; // error
 
-const skills: readonly string[] = ['Cooking', 'Drawing', 'Modeling'];
-//skills[0] = ('newSkill'); // error
+// Enums
+
+enum StatusCode {
+    SUCCESS,
+    IN_PROGRESS,
+    DENIED
+}
+
+const res = {
+    message: 'Completed',
+    statusCode: StatusCode.SUCCESS
+};
+
+// 1 - Success
+// 2 - In progress
+// 3 - Denied
+
+if (res.statusCode === StatusCode.SUCCESS){
+    console.log('Success');
+}
