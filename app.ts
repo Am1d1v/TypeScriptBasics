@@ -88,9 +88,9 @@ const arr: [number, string, ...boolean[]] = [1, "Something", true, true, false];
 // Enums
 
 enum StatusCode {
-    SUCCESS,
-    IN_PROGRESS,
-    DENIED
+    SUCCESS = 's',
+    IN_PROGRESS = 'p',
+    DENIED = "d"
 }
 
 const res = {
@@ -98,9 +98,9 @@ const res = {
     statusCode: StatusCode.SUCCESS
 };
 
-// 1 - Success
-// 2 - In progress
-// 3 - Denied
+// 1 || 's' - Success
+// 2 || 'p'- In progress
+// 3 || "d" - Denied
 
 if (res.statusCode === StatusCode.SUCCESS){
     console.log('Success');

@@ -76,17 +76,17 @@ const arr: [number, string, ...boolean[]] = [1, "Something", true, true, false];
 // Enums
 var StatusCode;
 (function (StatusCode) {
-    StatusCode[StatusCode["SUCCESS"] = 0] = "SUCCESS";
-    StatusCode[StatusCode["IN_PROGRESS"] = 1] = "IN_PROGRESS";
-    StatusCode[StatusCode["DENIED"] = 2] = "DENIED";
+    StatusCode["SUCCESS"] = "s";
+    StatusCode["IN_PROGRESS"] = "p";
+    StatusCode["DENIED"] = "d";
 })(StatusCode || (StatusCode = {}));
 const res = {
     message: 'Completed',
     statusCode: StatusCode.SUCCESS
 };
-// 1 - Success
-// 2 - In progress
-// 3 - Denied
+// 1 || 's' - Success
+// 2 || 'p'- In progress
+// 3 || "d" - Denied
 if (res.statusCode === StatusCode.SUCCESS) {
     console.log('Success');
 }
